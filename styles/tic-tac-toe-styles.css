@@ -10,7 +10,7 @@
     margin-top: 50px;
     position: relative;
 }
-.tictactoe-overlay {
+/* .tictactoe-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -25,9 +25,10 @@
     width: 240px; /* Adjust total width for mobile */
     height: 240px; /* Adjust total height for mobile */
     margin: 0 auto; /* Center the grid */
-}
+} */
 .col {
     padding: 0; /* Remove padding between columns */
+    height: 80px; /* Ensure square columns */
 }
 .current-player{
     max-width: 80%; 
