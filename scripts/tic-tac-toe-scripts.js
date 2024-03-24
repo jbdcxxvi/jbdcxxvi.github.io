@@ -23,7 +23,7 @@ function checkWinner() {
             alert(`${board[i][0]} wins!`);
             // document.getElementById('modal-winner-body').innerHTML=`<img class="current-player-small" src="../images/${board[i][0]}.png" alt="${board[i][0]}"> wins!`;
             // var modal = new bootstrap.Modal(document.getElementById('winnerModal'));
-            // modal.toggle();
+            //modal.toggle();
             reset();
             return;
         }
