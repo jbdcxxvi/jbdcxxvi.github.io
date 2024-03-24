@@ -5,43 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .square {
-            width: 80px; /* Adjust size for mobile */
-            height: 80px; /* Adjust size for mobile */
-            font-size: 2rem; /* Adjust font size for mobile */
-            text-align: center;
-            line-height: 80px; /* Adjust line height for mobile */
-            cursor: pointer;
-        }
-        .container {
-            margin-top: 50px;
-            position: relative;
-        }
-        .tictactoe-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        .tictactoe-grid {
-            display: flex;
-            flex-wrap: wrap; /* Allow the grid to wrap on smaller screens */
-            justify-content: center;
-            align-items: center;
-            width: 240px; /* Adjust total width for mobile */
-            height: 240px; /* Adjust total height for mobile */
-            margin: 0 auto; /* Center the grid */
-        }
-        .col {
-            padding: 0; /* Remove padding between columns */
-        }
-        .current-player{
-            max-width: 80%; 
-            max-height: 80%;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/tic-tac-toe-styles.css">
 </head>
 <body>
 
@@ -99,7 +63,6 @@
   </div>
 
 <script>
-    // document.addEventListener("DOMContentLoaded", function() {
         let currentPlayer = 'X';
         let board = [
             ['', '', ''],
@@ -110,7 +73,7 @@
         function handleClick(row, col) {
             if (board[row][col] === '') {
                 board[row][col] = currentPlayer;
-                document.getElementById(`${row}${col}`).innerHTML = `<img class="current-player" src="${currentPlayer}.png" alt="${currentPlayer}">`;
+                document.getElementById(`${row}${col}`).innerHTML = `<img class="current-player" src="../images/${currentPlayer}.png" alt="${currentPlayer}">`;
                 currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
                 setTimeout(() => {
                     checkWinner();
@@ -122,8 +85,7 @@
             // Check rows
             for (let i = 0; i < 3; i++) {
                 if (board[i][0] !== '' && board[i][0] === board[i][1] && board[i][1] === board[i][2]) {
-                    //alert(`${board[i][0]} wins!`);
-                    
+                    alert(`${board[i][0]} wins!`);
                     reset();
                     return;
                 }
@@ -171,7 +133,6 @@
                 }
             }
         }
-    // });
 </script>
 
 </body>
