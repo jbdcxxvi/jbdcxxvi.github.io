@@ -84,33 +84,34 @@ function reset() {
     }
 }
 
-function createGameBoard(rows, cols) {
-    // Get the container where the board will be appended
-    var container = document.getElementById('tic-tac-toe-grid');
+//for creating the grid automatically
+// function createGameBoard(rows, cols) {
+//     // Get the container where the board will be appended
+//     var container = document.getElementById('tic-tac-toe-grid');
     
-    // Loop through rows
-    for (var i = 0; i < rows; i++) {
-        // Create a new row div
-        var row = document.createElement('div');
-        row.className = 'row';
+//     // Loop through rows
+//     for (var i = 0; i < rows; i++) {
+//         // Create a new row div
+//         var row = document.createElement('div');
+//         row.className = 'row';
         
-        // Loop through columns
-        for (var j = 0; j < cols; j++) {
-            // Create a new square div
-            var square = document.createElement('div');
-            square.className = 'col-sm square border';
-            square.setAttribute('onclick', 'handleClick(' + i + ', ' + j + ')');
-            square.setAttribute('id', i + '' + j);
+//         // Loop through columns
+//         for (var j = 0; j < cols; j++) {
+//             // Create a new square div
+//             var square = document.createElement('div');
+//             square.className = 'col-sm square border';
+//             square.setAttribute('onclick', 'handleClick(' + i + ', ' + j + ')');
+//             square.setAttribute('id', i + '' + j);
             
-            // Append the square to the row
-            row.appendChild(square);
-        }
+//             // Append the square to the row
+//             row.appendChild(square);
+//         }
         
-        // Append the row to the container
-        container.appendChild(row);
-    }
-}
+//         // Append the row to the container
+//         container.appendChild(row);
+//     }
+// }
 
-window.onload = function() {
-    createGameBoard(3, 3);
-};
+// window.onload = function() {
+//     createGameBoard(3, 3);
+// };
