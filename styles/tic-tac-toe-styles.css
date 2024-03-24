@@ -33,6 +33,10 @@
     max-width: 80%; 
     max-height: 80%;
 }
+.current-player-small{
+    max-width: 50px; 
+    max-height: 50px;
+}
 /* .honk-tic-tac-toe-title
 {
     font-family: "Honk", system-ui;
