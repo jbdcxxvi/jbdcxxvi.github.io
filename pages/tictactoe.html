@@ -86,7 +86,7 @@
             // Check rows
             for (let i = 0; i < 3; i++) {
                 if (board[i][0] !== '' && board[i][0] === board[i][1] && board[i][1] === board[i][2]) {
-                    alert(`${board[i][0]} wins!`);
+                    //alert(`${board[i][0]} wins!`);
                     document.getElementById('modal-winner-body').innerHTML=`${board[i][0]} wins!`;
                     var modal = new bootstrap.Modal(document.getElementById('winnerModal'));
                     modal.toggle();
