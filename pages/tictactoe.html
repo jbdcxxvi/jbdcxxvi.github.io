@@ -13,11 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet"> -->
 </head>
 <body>
-
 <div class="container text-center">
-    <h1 class="honk-tic-tac-toe-title">Tic Tac Toe</h1>
     <div class="row">
-        <div class="col-sm-4 offset-4">
+        <h1 class="honk-tic-tac-toe-title">Tic Tac Toe</h1>
+    </div>
+    <div class="row">
+        <div class="grid-container col-sm-12">   
             <div class="row">
                 <div class="col-sm square border" onclick="handleClick(0, 0)" id="00"></div>
                 <div class="col-sm square border" onclick="handleClick(0, 1)" id="01"></div>
@@ -36,7 +37,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-4 offset-4">
+        <div class="col-sm-3 m-auto pt-2">
             <button class="btn btn-primary" onclick="reset()">Reset</button>
         </div>
     </div>
