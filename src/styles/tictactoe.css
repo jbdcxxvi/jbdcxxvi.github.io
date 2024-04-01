@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 .square {
     width: 80px; /* Adjust size for mobile */
     height: 80px; /* Adjust size for mobile */
@@ -28,4 +30,9 @@
 .grid-container {
     display: grid;
     place-items: center; /* This centers the grid items both horizontally and vertically */
+}
+.luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
